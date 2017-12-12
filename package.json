@@ -6,12 +6,14 @@
   "scripts": {
     "sass:build": "node-sass --output-style compressed --source-map true src/aquo.scss dist/aquo.css",
     "sass:watch": "node-sass -w --output-style expanded --source-map true src/aquo.scss dist/aquo.css",
+    "sass:autoprefix": "postcss --use autoprefixer --map false --output dist/aquo.css dist/aquo.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrick Peng",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.2.2",
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.1"
   }
 }
