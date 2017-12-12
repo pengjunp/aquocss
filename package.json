@@ -1,0 +1,17 @@
+{
+  "name": "aquocss",
+  "version": "1.0.0",
+  "description": "Aquo CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "node-sass --output-style expanded --source-map true ./src/aquo.scss > ./dist/aquo.css",
+    "sass:watch": "npm run sass:build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Peng",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.2",
+    "node-sass": "^4.7.2"
+  }
+}
