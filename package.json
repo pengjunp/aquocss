@@ -4,8 +4,8 @@
   "description": "Aquo CSS framework",
   "main": "index.js",
   "scripts": {
-    "sass:build": "node-sass --output-style expanded --source-map true ./src/aquo.scss > ./dist/aquo.css",
-    "sass:watch": "npm run sass:build -- --watch",
+    "sass:build": "node-sass --output-style compressed --source-map true src/aquo.scss dist/aquo.css",
+    "sass:watch": "node-sass -w --output-style expanded --source-map true src/aquo.scss dist/aquo.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrick Peng",
