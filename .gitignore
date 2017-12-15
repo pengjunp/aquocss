@@ -22,8 +22,8 @@ sublime-gulp.log
 # build/
 
 # Ignore CSS & Map File
-*.css
-*.map
+# *.css
+# *.map
 
 # Ignore any node_modules folder
 node_modules/
