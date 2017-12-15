@@ -4,16 +4,20 @@
   "description": "Aquo CSS framework",
   "main": "index.js",
   "scripts": {
-    "sass:build": "node-sass --output-style compressed --source-map true src/aquo.scss dist/aquo.css",
+    "sass:build": "node-sass --output-style compact src/aquo.scss dist/aquo.css",
     "sass:watch": "node-sass -w --output-style expanded --source-map true src/aquo.scss dist/aquo.css",
-    "sass:autoprefix": "postcss --use autoprefixer --map false --output dist/aquo.css dist/aquo.css",
+    "sass:minify": "postcss dist/aquo.css --no-map --use postcss-discard-comments --use cssnano --output dist/aquo.min.css",
+    "sass:autoprefix": "postcss dist/aquo.css --no-map --use autoprefixer --output dist/aquo.css",
+    "sass": "npm run sass:build && npm run sass:autoprefix && npm run sass:minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrick Peng",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.2.2",
+    "cssnano": "^3.10.0",
     "node-sass": "^4.7.2",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "postcss-discard-comments": "^2.0.4"
   }
 }
