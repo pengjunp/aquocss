@@ -777,8 +777,12 @@ template {
 /******************
  * 5. Visibility
  ******************/
-.show {
-  display: block;
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .hidden {
