@@ -1,0 +1,54 @@
+
+// padding helper
+@mixin padding($top: false, $right: false, $bottom: false, $left: false) {
+    @if $top {
+      padding-top: $top;
+    }
+    @if $right {
+      padding-right: $right;
+    }
+    @if $bottom {
+      padding-bottom: $bottom;
+    }
+    @if $left {
+      padding-left: $left;
+    }
+  }
+  
+  // margin helper
+  @mixin margin($top: false, $right: false, $bottom: false, $left: false) {
+    @if $top {
+      margin-top: $top;
+    }
+    @if $right {
+      margin-right: $right;
+    }
+    @if $bottom {
+      margin-bottom: $bottom;
+    }
+    @if $left {
+      margin-left: $left;
+    }
+  }
+  
+  // media query helper
+  @mixin mq($width, $type: min) {
+      @if map_has_key($breakpoints, $width) {
+          $width: map_get($breakpoints, $width);
+          @if $type == max {
+              $width: $width - 1px;
+          }
+          @media only screen and (#{$type}-width: $width) {
+              @content;
+          }
+      }
+  }
+
+  // clearfix
+  @mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }

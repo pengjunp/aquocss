@@ -1,0 +1,16 @@
+// breakpoints
+$bp-xsmall: 480px;
+$bp-small: 768px;
+$bp-medium: 1024px;
+$bp-large: 1366px;
+$bp-xlarge: 1920px;
+$bp-xxlarge: 2560px;
+
+$breakpoints: (
+    "xs": $bp-xsmall,
+    "sm": $bp-small,
+    "md": $bp-medium,
+    "lg": $bp-large,
+    "xl": $bp-xlarge,
+    "xxl": $bp-xxlarge
+);

@@ -435,6 +435,395 @@ template {
 
 /* Variables */
 /* Base */
+/*
+ * Helpers
+ *
+ * 1. Display
+ * 2. Text
+ * 3. Position
+ * 4. Layout
+ * 5. Visibility
+ * 6. Other
+ *
+ */
+/******************
+ * 1. Display
+ ******************/
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+/******************
+ * 2. Text
+ ******************/
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/******************
+ * 3. Position
+ ******************/
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+/******************
+ * 4. Layout
+ ******************/
+.margin-t1 {
+  margin-top: 1rem;
+}
+
+.margin-t2 {
+  margin-top: 2rem;
+}
+
+.margin-t3 {
+  margin-top: 3rem;
+}
+
+.margin-t4 {
+  margin-top: 4rem;
+}
+
+.margin-b1 {
+  margin-bottom: 1rem;
+}
+
+.margin-b2 {
+  margin-bottom: 2rem;
+}
+
+.margin-b3 {
+  margin-bottom: 3rem;
+}
+
+.margin-b4 {
+  margin-bottom: 4rem;
+}
+
+.margin-t1b1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.margin-t2b2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.margin-t3b3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.margin-t4b4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.clear-margin {
+  margin: 0;
+}
+
+.padding-t1 {
+  padding-top: 1rem;
+}
+
+.padding-t2 {
+  padding-top: 2rem;
+}
+
+.padding-t3 {
+  padding-top: 3rem;
+}
+
+.padding-t4 {
+  padding-top: 4rem;
+}
+
+.padding-b1 {
+  padding-bottom: 1rem;
+}
+
+.padding-b2 {
+  padding-bottom: 2rem;
+}
+
+.padding-b3 {
+  padding-bottom: 3rem;
+}
+
+.padding-b4 {
+  padding-bottom: 4rem;
+}
+
+.padding-t1b1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-t2b2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.padding-t3b3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.padding-t4b4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.padding-l1r1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.padding-l2r2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.padding-l3r3 {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.padding-l4r4 {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.clear-padding {
+  padding: 0;
+}
+
+/******************
+ * 5. Visibility
+ ******************/
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/******************
+ * 6. Other
+ ******************/
+.pointer {
+  cursor: pointer;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+html {
+  background-color: white;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+}
+
+body {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  color: #3273dc;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #363636;
+}
+
+code {
+  background-color: whitesmoke;
+  color: #ff3860;
+  font-size: 0.875em;
+  font-weight: normal;
+  padding: 0.25em 0.5em 0.25em;
+}
+
+hr {
+  background-color: #dbdbdb;
+  border: none;
+  display: block;
+  height: 1px;
+  margin: 1.5rem 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+strong {
+  color: #363636;
+  font-weight: 700;
+}
+
+pre + overflow-touch {
+  background-color: whitesmoke;
+  color: #4a4a4a;
+  font-size: 0.875em;
+  overflow-x: auto;
+  padding: 1.25rem 1.5rem;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+pre code {
+  background-color: transparent;
+  color: currentColor;
+  font-size: 1em;
+  padding: 0;
+}
+
+table td,
+th {
+  text-align: left;
+  vertical-align: top;
+}
+
+table td th,
+th th {
+  color: #363636;
+}
+
 /* Elements */
 /* Layout */
 /* Components */

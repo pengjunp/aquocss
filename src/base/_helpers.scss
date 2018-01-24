@@ -1,0 +1,278 @@
+/*
+ * Helpers
+ *
+ * 1. Display
+ * 2. Text
+ * 3. Position
+ * 4. Layout
+ * 5. Visibility
+ * 6. Other
+ *
+ */
+
+
+/******************
+ * 1. Display
+ ******************/
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+
+/******************
+ * 2. Text
+ ******************/
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+/******************
+ * 3. Position
+ ******************/
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-none {
+    float: none;
+}
+
+.clearfix {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.clear-both {
+    clear: both;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+
+
+/******************
+ * 4. Layout
+ ******************/
+
+.margin-t1 {
+    @include margin($top: 1rem);
+}
+
+.margin-t2 {
+    @include margin($top: 2rem);
+}
+
+.margin-t3 {
+    @include margin($top: 3rem);
+}
+
+.margin-t4 {
+    @include margin($top: 4rem);
+}
+
+.margin-b1 {
+    @include margin($bottom: 1rem);
+}
+
+.margin-b2 {
+    @include margin($bottom: 2rem);
+}
+
+.margin-b3 {
+    @include margin($bottom: 3rem);
+}
+
+.margin-b4 {
+    @include margin($bottom: 4rem);
+}
+
+.margin-t1b1 {
+    @include margin($top: 1rem, $bottom: 1rem);
+}
+
+.margin-t2b2 {
+    @include margin($top: 2rem, $bottom: 2rem);
+}
+
+.margin-t3b3 {
+    @include margin($top: 3rem, $bottom: 3rem);
+}
+
+.margin-t4b4 {
+    @include margin($top: 4rem, $bottom: 4rem);
+}
+
+.clear-margin {
+    margin: 0;
+}
+
+.padding-t1 {
+    @include padding($top: 1rem);
+}
+
+.padding-t2 {
+    @include padding($top: 2rem);
+}
+
+.padding-t3 {
+    @include padding($top: 3rem);
+}
+
+.padding-t4 {
+    @include padding($top: 4rem);
+}
+
+.padding-b1 {
+    @include padding($bottom: 1rem);
+}
+
+.padding-b2 {
+    @include padding($bottom: 2rem);
+}
+
+.padding-b3 {
+    @include padding($bottom: 3rem);
+}
+
+.padding-b4 {
+    @include padding($bottom: 4rem);
+}
+
+.padding-t1b1 {
+    @include padding($top: 1rem, $bottom: 1rem);
+}
+
+.padding-t2b2 {
+    @include padding($top: 2rem, $bottom: 2rem);
+}
+
+.padding-t3b3 {
+    @include padding($top: 3rem, $bottom: 3rem);
+}
+
+.padding-t4b4 {
+    @include padding($top: 4rem, $bottom: 4rem);
+}
+
+.padding-l1r1 {
+    @include padding($left: 1rem, $right: 1rem);
+}
+
+.padding-l2r2 {
+    @include padding($left: 2rem, $right: 2rem);
+}
+
+.padding-l3r3 {
+    @include padding($left: 3rem, $right: 3rem);
+}
+
+.padding-l4r4 {
+    @include padding($left: 4rem, $right: 4rem);
+}
+
+.clear-padding {
+    padding: 0;
+}
+
+
+/******************
+ * 5. Visibility
+ ******************/
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/******************
+ * 6. Other
+ ******************/
+
+.pointer {
+    cursor: pointer;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
+
+@function findColorInvert($color) {
+    @if colorLuminance($color)>0.55 {
+        @return rgba(#000, 0.7);
+    }
+    @else {
+        @return #fff;
+    }
+}
