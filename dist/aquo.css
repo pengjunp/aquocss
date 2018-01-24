@@ -496,6 +496,104 @@ template {
   white-space: nowrap;
 }
 
+.size-1 {
+  font-size: 3rem !important;
+}
+
+.title-1 {
+  font-size: 3rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+.title-1:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.size-2 {
+  font-size: 2.5rem !important;
+}
+
+.title-2 {
+  font-size: 2.5rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+.title-2:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.size-3 {
+  font-size: 2rem !important;
+}
+
+.title-3 {
+  font-size: 2rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+.title-3:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.size-4 {
+  font-size: 1.5rem !important;
+}
+
+.title-4 {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+.title-4:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.size-5 {
+  font-size: 1.25rem !important;
+}
+
+.title-5 {
+  font-size: 1.25rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+.title-5:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.size-6 {
+  font-size: 1rem !important;
+}
+
+.title-6 {
+  font-size: 1rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+.title-6:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.size-7 {
+  font-size: 0.75rem !important;
+}
+
+.title-7 {
+  font-size: 0.75rem;
+  line-height: 1.125;
+  margin-top: 0;
+}
+
+.title-7:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
 /******************
  * 3. Position
  ******************/
@@ -839,6 +937,20 @@ th th {
     margin-left: 32px;
     margin-right: 32px;
     max-width: none;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1215px) {
+  .container {
+    max-width: 1152px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1407px) {
+  .container {
+    max-width: 1344px;
     width: auto;
   }
 }
