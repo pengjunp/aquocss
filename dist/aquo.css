@@ -1132,8 +1132,8 @@ h7 {
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -32px;
-  margin-left: -32px;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 
 .row.reverse {
@@ -1172,8 +1172,8 @@ h7 {
 .col-xs-offset-12 {
   box-sizing: border-box;
   flex: 0 0 auto;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .col-xs {
@@ -1335,7 +1335,7 @@ h7 {
 
 @media only screen and (min-width: 769px) {
   .container {
-    width: 833px;
+    width: 801px;
   }
   .col-sm,
   .col-sm-1,
@@ -1494,7 +1494,7 @@ h7 {
 
 @media only screen and (min-width: 1024px) {
   .container {
-    width: 1088px;
+    width: 1056px;
   }
   .col-md,
   .col-md-1,
@@ -1653,7 +1653,7 @@ h7 {
 
 @media only screen and (min-width: 1216px) {
   .container {
-    width: 1280px;
+    width: 1248px;
   }
   .col-lg,
   .col-lg-1,

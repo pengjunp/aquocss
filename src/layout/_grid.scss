@@ -1,8 +1,8 @@
 // Flexbox Grid: https://github.com/kristoferjoseph/flexboxgrid
-$gutter-width: $gap * 2;
+$gutter-width: $gap ;
 $outer-margin: 2rem;
-$gutter-compensation: $gap * -1;
-$half-gutter-width: $gap;
+$gutter-compensation: $gap / 2 * -1;
+$half-gutter-width: $gap / 2;
 $sm-min: $tablet;
 $md-min: $desktop;
 $lg-min: $widescreen;
