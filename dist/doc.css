@@ -1,0 +1,41 @@
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  border-right: 1px solid #dbdbdb;
+}
+
+.nav .nav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.nav .nav__menu > a {
+  display: block;
+}
+
+main {
+  padding-left: 250px;
+}
+
+main .content {
+  padding: 2rem;
+}
+
+main .content h3 {
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+main .content pre {
+  white-space: inherit;
+  background-color: #282c34;
+  color: #b5b5b5;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=doc.css.map */

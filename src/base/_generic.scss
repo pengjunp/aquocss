@@ -135,3 +135,12 @@ th {
         color: $text-strong;
     }
 }
+
+// headings
+@each $size in $sizes {
+    $i: index($sizes, $size);
+    h#{$i} {
+        font-size: $size;
+        font-weight: $weight-medium;
+    }
+}

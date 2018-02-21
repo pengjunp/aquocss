@@ -526,6 +526,7 @@ template {
 
 .title-1 {
   font-size: 3rem;
+  font-weight: 500;
   line-height: 1.125;
   margin-top: 0;
 }
@@ -534,12 +535,20 @@ template {
   margin-bottom: 1.5rem;
 }
 
+.subtitle-1 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -1.5rem;
+}
+
 .size-2 {
   font-size: 2.5rem !important;
 }
 
 .title-2 {
   font-size: 2.5rem;
+  font-weight: 500;
   line-height: 1.125;
   margin-top: 0;
 }
@@ -548,12 +557,20 @@ template {
   margin-bottom: 1.5rem;
 }
 
+.subtitle-2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -1.5rem;
+}
+
 .size-3 {
   font-size: 2rem !important;
 }
 
 .title-3 {
   font-size: 2rem;
+  font-weight: 500;
   line-height: 1.125;
   margin-top: 0;
 }
@@ -562,12 +579,20 @@ template {
   margin-bottom: 1.5rem;
 }
 
+.subtitle-3 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -1.5rem;
+}
+
 .size-4 {
   font-size: 1.5rem !important;
 }
 
 .title-4 {
   font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1.125;
   margin-top: 0;
 }
@@ -576,12 +601,20 @@ template {
   margin-bottom: 1.5rem;
 }
 
+.subtitle-4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -1.5rem;
+}
+
 .size-5 {
   font-size: 1.25rem !important;
 }
 
 .title-5 {
   font-size: 1.25rem;
+  font-weight: 500;
   line-height: 1.125;
   margin-top: 0;
 }
@@ -590,12 +623,20 @@ template {
   margin-bottom: 1.5rem;
 }
 
+.subtitle-5 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -1.5rem;
+}
+
 .size-6 {
   font-size: 1rem !important;
 }
 
 .title-6 {
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.125;
   margin-top: 0;
 }
@@ -604,18 +645,33 @@ template {
   margin-bottom: 1.5rem;
 }
 
+.subtitle-6 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -1.5rem;
+}
+
 .size-7 {
   font-size: 0.75rem !important;
 }
 
 .title-7 {
   font-size: 0.75rem;
+  font-weight: 500;
   line-height: 1.125;
   margin-top: 0;
 }
 
 .title-7:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+.subtitle-7 {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: -1.5rem;
 }
 
 /******************
@@ -980,6 +1036,41 @@ th {
 table td th,
 th th {
   color: #363636;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h7 {
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 /* Elements */

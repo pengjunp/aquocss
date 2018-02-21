@@ -9,6 +9,8 @@
     "sass:minify": "postcss dist/aquo.css --no-map --use postcss-discard-comments --use cssnano --output dist/aquo.min.css",
     "sass:autoprefix": "postcss dist/aquo.css --no-map --use autoprefixer --output dist/aquo.css",
     "sass": "npm run sass:build && npm run sass:autoprefix && npm run sass:minify",
+    "doc:watch": "node-sass -w --output-style expanded --source-map true src/doc.scss dist/doc.css",
+    "serve": "http-server ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrick Peng",
