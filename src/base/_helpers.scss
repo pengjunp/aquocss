@@ -159,10 +159,7 @@
  * 4. Layout
  ******************/
 
-@each $size in 1,
-2,
-3,
-4 {
+@each $size in 1,2,3,4 {
     .margin-t#{$size} {
         @include margin($top: #{$size}rem);
     }
@@ -178,10 +175,7 @@
     margin: 0;
 }
 
-@each $size in 1,
-2,
-3,
-4 {
+@each $size in 1,2,3,4 {
     .padding-t#{$size} {
         @include padding($top: #{$size}rem);
     }

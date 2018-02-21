@@ -24,8 +24,9 @@ main {
     padding-left: 250px;
     .content {
         padding: 2rem;
+        max-width: 966px;
 
-        h3 {
+        h3.content__heading {
             line-height: 1;
             margin-bottom: 1rem;
         }
@@ -40,16 +41,20 @@ main {
 
         .row {
             [class^="col-"] {
-                height: 2rem;
                 margin-bottom: 1rem;
-                &::before {
-                    content: ' ';
-                    display: block;
-                    height: inherit;
-                    background-color: $primary;
-                    border-radius: $radius;
+            }
+
+            &.is-demo {
+                [class^="col-"] {
+                    height: 2rem;
+                    &::before {
+                        content: ' ';
+                        display: block;
+                        height: inherit;
+                        background-color: $primary;
+                        border-radius: $radius;
+                    }
                 }
-                
             }
         }
     }

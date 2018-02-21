@@ -23,9 +23,10 @@ main {
 
 main .content {
   padding: 2rem;
+  max-width: 966px;
 }
 
-main .content h3 {
+main .content h3.content__heading {
   line-height: 1;
   margin-bottom: 1rem;
 }
@@ -39,11 +40,14 @@ main .content pre {
 }
 
 main .content .row [class^="col-"] {
-  height: 2rem;
   margin-bottom: 1rem;
 }
 
-main .content .row [class^="col-"]::before {
+main .content .row.is-demo [class^="col-"] {
+  height: 2rem;
+}
+
+main .content .row.is-demo [class^="col-"]::before {
   content: ' ';
   display: block;
   height: inherit;
